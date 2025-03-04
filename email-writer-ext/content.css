@@ -1,0 +1,26 @@
+/* Tone Selector Styling */
+.ai-tone-selector {
+    padding: 6px;
+    border: 1px solid #1976D2; /* Border color */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #E3F2FD; /* Light blue background */
+    color: #0D47A1; /* Dark blue text */
+    cursor: pointer;
+    margin-right: 8px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Change background color on hover */
+.ai-tone-selector:hover {
+    background-color: #BBDEFB; /* Slightly darker blue on hover */
+    border-color: #0D47A1;
+}
+
+/* Change background when focused */
+.ai-tone-selector:focus {
+    background-color: #BBDEFB;
+    outline: none;
+    border-color: #0D47A1;
+}
