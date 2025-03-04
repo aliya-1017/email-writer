@@ -52,8 +52,10 @@ const App = () => {
       primary: { main: "#FF9AA2" },
       secondary: { main: "#A2D8FF" },
       background: {
-        default: darkMode ? "#1E1E1E" : "#FFF5E5",
-        paper: darkMode ? "#121212" : "#FFFDF9",
+        background: {
+          default: darkMode ? "#1E1E1E" : "#FAF3DD", // Floral Pastel Yellow
+          paper: darkMode ? "#121212" : "#FAF3DD", // Floral Pastel Yellow
+        },        
       },
       text: { primary: darkMode ? "#FFFFFF" : "#5F5A6C" },
     },
@@ -80,9 +82,8 @@ const App = () => {
           justifyContent: "center",
           alignItems: "center",
           minHeight: "100vh",
-          background: darkMode
-            ? "#121212"
-            : "linear-gradient(135deg, #FFF5E5, #FFFBEB)",
+          background: darkMode ? "#121212" : "", // Floral Pastel Yellow
+
           transition: "all 0.4s ease-in-out",
         }}
       >
@@ -95,9 +96,8 @@ const App = () => {
               : "0px 4px 15px rgba(0, 0, 0, 0.1)",
             maxWidth: "600px",
             width: "100%",
-            background: darkMode
-              ? "#1E1E1E"
-              : "linear-gradient(135deg, #FFF5E5, #FFFBEB)",
+            background: darkMode ? "#1E1E1E" : "#B3CEE5", // Floral Pastel Yellow
+
             textAlign: "center",
           }}
         >
@@ -117,7 +117,8 @@ const App = () => {
               onChange={(e) => setEmailContent(e.target.value)}
               sx={{
                 mb: 2,
-                bgcolor: darkMode ? "#2E2E2E" : "#FFFDF9",
+                bgcolor: darkMode ? "#2E2E2E" : "white", // Floral Pastel Yellow
+
                 borderRadius: "10px",
                 "& .MuiOutlinedInput-root": {
                   "& fieldset": {
